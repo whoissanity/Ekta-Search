@@ -4,7 +4,7 @@
 
 ### Bangladesh's Tech Search Engine
 
-Ektai Search Lagbe. </n>
+Ektai Search Lagbe.<br />
 **"Most Bangladeshi e-commerce websites were shitty. So I built the fix."**
 
 [![Frontend](https://img.shields.io/badge/Frontend-React%2018%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)](#tech-stack)
