@@ -117,5 +117,68 @@ EktaSearch works because it is system-first, not page-first:
 
 ---
 
+## Core API Surface
+
+- `GET /api/search`
+- `GET /api/search/stream`
+- `GET /api/compare`
+- `POST /api/builder/analyze`
+- `POST /api/builder/save`
+- `GET /api/builder/{build_id}`
+- `GET /api/cart`, `POST /api/cart/add`, `DELETE /api/cart`
+- `GET /api/community/posts`, `POST /api/community/posts`
+- `POST /api/community/posts/{post_id}/replies`
+- `POST /api/community/posts/{post_id}/vote`
+- `POST /api/community/attachments`
+- `POST /api/auth/register`, `POST /api/auth/login`, `GET /api/auth/me`
+- `GET /api/health`
+
+---
+
+## Local Development
+
+### 1) Backend
+
+```bash
+cd backend
+python -m venv .venv
+# Windows PowerShell:
+.venv\Scripts\Activate.ps1
+# macOS/Linux:
+# source .venv/bin/activate
+
+pip install -r requirements.txt
+copy .env.example .env
+uvicorn app.main:app --reload
+```
+
+### 2) Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs on `http://localhost:5173` and proxies to FastAPI routes under `/api`.
+
+---
+
+## Environment Configuration
+
+Configure secrets and runtime behavior in `backend/.env`:
+
+- Retailer API keys and base URLs
+- `REDIS_URL`
+- `DATABASE_URL`
+- `CACHE_TTL_SECONDS`
+- `SEARCH_SHOP_TIMEOUT_SECONDS`
+- `SEARCH_MAX_RETAILER_PAGES`
+- `PREWARM_ENABLED` / `PREWARM_INTERVAL_SECONDS`
+
+Use `backend/.env.example` as the template.
+
+---
+
 
 
