@@ -1,4 +1,4 @@
-# [ EktaSearch (SOON)](https://ektasearch.com)
+# [ EktaSearch (WIP)](https://ektasearch.com)
 
 
 
