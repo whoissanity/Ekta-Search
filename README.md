@@ -1,6 +1,6 @@
 # EktaSearch
 
-<div align="center">
+
 
 ### Bangladesh's PC Parts Search Engine
 
@@ -8,13 +8,13 @@ Search once. Compare across 8 retailers. Build a compatible PC. Save, share, and
 
 **"Most Bangladeshi e-commerce experiences were chaotic. So I built the fix."**
 
-[![Frontend](https://img.shields.io/badge/Frontend-React%2018%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)](#tech-stack)
-[![Backend](https://img.shields.io/badge/Backend-FastAPI%20%2B%20Python-009688?style=for-the-badge&logo=fastapi&logoColor=white)](#tech-stack)
-[![State](https://img.shields.io/badge/State-Zustand-7C3AED?style=for-the-badge)](#tech-stack)
-[![Styling](https://img.shields.io/badge/UI-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](#tech-stack)
-[![Data](https://img.shields.io/badge/Data-Redis%20Cache%20%2B%20SQLite-4CAF50?style=for-the-badge)](#tech-stack)
+[Frontend](#tech-stack)
+[Backend](#tech-stack)
+[State](#tech-stack)
+[Styling](#tech-stack)
+[Data](#tech-stack)
 
-</div>
+
 
 ---
 
@@ -98,6 +98,7 @@ EktaSearch works because it is system-first, not page-first:
 ## Tech Stack
 
 ### Frontend
+
 - React 18 + TypeScript
 - Vite 5
 - TailwindCSS
@@ -106,6 +107,7 @@ EktaSearch works because it is system-first, not page-first:
 - React Router v6
 
 ### Backend
+
 - Python 3 + FastAPI
 - Async fan-out with `asyncio`
 - SQLAlchemy (async) + `aiosqlite`
@@ -115,97 +117,5 @@ EktaSearch works because it is system-first, not page-first:
 
 ---
 
-## Core API Surface
 
-- `GET /api/search`
-- `GET /api/search/stream`
-- `GET /api/compare`
-- `POST /api/builder/analyze`
-- `POST /api/builder/save`
-- `GET /api/builder/{build_id}`
-- `GET /api/cart`, `POST /api/cart/add`, `DELETE /api/cart`
-- `GET /api/community/posts`, `POST /api/community/posts`
-- `POST /api/community/posts/{post_id}/replies`
-- `POST /api/community/posts/{post_id}/vote`
-- `POST /api/community/attachments`
-- `POST /api/auth/register`, `POST /api/auth/login`, `GET /api/auth/me`
-- `GET /api/health`
 
----
-
-## Local Development
-
-### 1) Backend
-
-```bash
-cd backend
-python -m venv .venv
-# Windows PowerShell:
-.venv\Scripts\Activate.ps1
-# macOS/Linux:
-# source .venv/bin/activate
-
-pip install -r requirements.txt
-copy .env.example .env
-uvicorn app.main:app --reload
-```
-
-### 2) Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend runs on `http://localhost:5173` and proxies to FastAPI routes under `/api`.
-
----
-
-## Environment Configuration
-
-Configure secrets and runtime behavior in `backend/.env`:
-
-- Retailer API keys and base URLs
-- `REDIS_URL`
-- `DATABASE_URL`
-- `CACHE_TTL_SECONDS`
-- `SEARCH_SHOP_TIMEOUT_SECONDS`
-- `SEARCH_MAX_RETAILER_PAGES`
-- `PREWARM_ENABLED` / `PREWARM_INTERVAL_SECONDS`
-
-Use `backend/.env.example` as the template.
-
----
-
-## Product Highlights for Employers
-
-EktaSearch demonstrates:
-
-- **Full-stack ownership** from UX and state to API architecture and data modeling
-- **Real-world integration engineering** across multiple inconsistent external sources
-- **Performance mindset** with caching, async fan-out, and progressive delivery
-- **Domain thinking** (Bangladesh retail pain points, not generic demo logic)
-- **Maintainable structure** with clear boundaries: adapters, routers, services, models, stores
-
-This is not just "a CRUD app." It is a production-minded product solving an actual market workflow.
-
----
-
-## Roadmap
-
-- [ ] Move search hot path to indexed ingestion pipeline (FTS/tsvector/Meilisearch style)
-- [ ] Add observability dashboards (latency per adapter, cache hit ratio, error budgets)
-- [ ] Improve ranking with richer spec-aware feature extraction
-- [ ] Add better identity/session hardening and moderation tooling
-- [ ] Ship deployment manifests and CI checks
-
----
-
-## Vision
-
-EktaSearch is my answer to a local UX quality gap:
-
-**Make Bangladeshi PC shopping feel modern, transparent, and fast.**
-
-If you are hiring for product-minded full-stack engineering, this repo shows exactly how I think and build.
