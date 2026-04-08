@@ -8,11 +8,11 @@ Search once. Compare across 8 retailers. Build a compatible PC. Save, share, and
 
 **"Most Bangladeshi e-commerce experiences were chaotic. So I built the fix."**
 
-[Frontend](#tech-stack)
-[Backend](#tech-stack)
-[State](#tech-stack)
-[Styling](#tech-stack)
-[Data](#tech-stack)
+[![Frontend](https://img.shields.io/badge/Frontend-React%2018%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)](#tech-stack)
+[![Backend](https://img.shields.io/badge/Backend-FastAPI%20%2B%20Python-009688?style=for-the-badge&logo=fastapi&logoColor=white)](#tech-stack)
+[![State](https://img.shields.io/badge/State-Zustand-7C3AED?style=for-the-badge)](#tech-stack)
+[![Styling](https://img.shields.io/badge/UI-TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](#tech-stack)
+[![Data](https://img.shields.io/badge/Data-Redis%20Cache%20%2B%20SQLite-4CAF50?style=for-the-badge)](#tech-stack)
 
 
 
