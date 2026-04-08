@@ -6,7 +6,7 @@
 
 Search once. Compare across 8 retailers. Build a compatible PC. Save, share, and decide faster.
 
-**"Most Bangladeshi e-commerce experiences were chaotic. So I built the fix."**
+**"Most Bangladeshi e-commerce websites were shitty. So I built the fix."**
 
 [![Frontend](https://img.shields.io/badge/Frontend-React%2018%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)](#tech-stack)
 [![Backend](https://img.shields.io/badge/Backend-FastAPI%20%2B%20Python-009688?style=for-the-badge&logo=fastapi&logoColor=white)](#tech-stack)
