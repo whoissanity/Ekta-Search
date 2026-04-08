@@ -1,11 +1,10 @@
-# [# EktaSearch](https://ektasearch.com)
+# [ EktaSearch](https://ektasearch.com)
 
 
 
-### Bangladesh's PC Parts Search Engine
+### Bangladesh's Tech Search Engine
 
-Search once. Compare across 8 retailers. Build a compatible PC. Save, share, and decide faster.
-
+Ektai Search Lagbe.
 **"Most Bangladeshi e-commerce websites were shitty. So I built the fix."**
 
 [![Frontend](https://img.shields.io/badge/Frontend-React%2018%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)](#tech-stack)
